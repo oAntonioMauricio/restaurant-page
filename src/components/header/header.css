@@ -1,20 +1,22 @@
+header {
+  width: 100%;
+}
+
 .headerNav {
+  display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #ffffff;
   border-color: #e5e7eb;
 }
 
 .divNav {
+  width: 100%;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1280px;
 }
 
 .aNav {
