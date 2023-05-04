@@ -1,0 +1,70 @@
+.headerNav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.divNav {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.aNav {
+  display: flex;
+  align-items: center;
+}
+
+.imageA {
+  margin-right: 0.75rem;
+  height: 1.5rem;
+}
+
+.spanA {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  align-self: center;
+}
+
+ul {
+  margin: 0;
+}
+
+.divUl {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+.ulDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  gap: 20px;
+}
+
+li {
+  display: block;
+}
+
+.aLiNav {
+  display: block;
+  color: #374151;
+  border-bottom-width: 1px;
+  border-color: #f3f4f6;
+}
+
+.aLiNav:hover {
+  color: blue;
+  cursor: pointer;
+}
