@@ -34,7 +34,7 @@ const header = () => {
   // span in aNav
   const spanA = document.createElement("span");
   spanA.classList.add("spanA");
-  spanA.textContent = "Restaurant";
+  spanA.textContent = "Beary Bear";
   aNav.append(spanA);
 
   // ---- div with ul ----- //
