@@ -57,14 +57,18 @@ const header = () => {
     switch (i) {
       case 0:
         a.textContent = "Home";
+        a.setAttribute("id", "homeLink");
         break;
       case 1:
         a.textContent = "Menu";
+        a.setAttribute("id", "menuLink");
         break;
       case 2:
         a.textContent = "Contact";
+        a.setAttribute("id", "contactLink");
         break;
       default:
+        // eslint-disable-next-line no-console
         console.log("error in nav names");
     }
 
