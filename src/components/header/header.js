@@ -60,7 +60,7 @@ const header = () => {
         a.setAttribute("id", "homeLink");
         break;
       case 1:
-        a.textContent = "Menu";
+        a.textContent = "Collection";
         a.setAttribute("id", "menuLink");
         break;
       case 2:

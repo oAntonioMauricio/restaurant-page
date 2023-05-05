@@ -3,6 +3,11 @@ import "./hero.css";
 const hero = () => {
   console.log("hero ONLINE");
 
+  // toggle css on header button
+  // clean other buttons
+  const headerButtom = document.getElementById("homeLink");
+  headerButtom.classList.add("activeButton");
+
   // main container
   const container = document.getElementById("content");
 
@@ -29,14 +34,14 @@ const hero = () => {
   // h1
   const leftHeroH1 = document.createElement("h1");
   leftHeroH1.classList.add("leftHeroH1");
-  leftHeroH1.textContent = "Experience the Art of Fine Dining at Beary Bear";
+  leftHeroH1.textContent = "Harness the Power of Technology.";
   leftTopHero.append(leftHeroH1);
 
   // p
   const leftHeroP = document.createElement("p");
   leftHeroP.classList.add("leftHeroP");
   leftHeroP.textContent =
-    "Welcome to Beary Bear, where culinary excellence meets impeccable service. Our menu features a unique blend of contemporary and traditional dishes, crafted from the freshest, locally-sourced ingredients. Whether you're in the mood for a quick bite or a leisurely dinner, our warm and invitin";
+    "Our cellphones are more than just devices, they are an extension of your personality. Our collection offers a wide range of styles, colors, and features to cater to every individual's unique needs. Whether you are looking for a sleek and minimalist design, or a more vibrant and colorful option, we have something that will fit your style.";
   leftTopHero.append(leftHeroP);
 
   // right hero sec
@@ -44,7 +49,8 @@ const hero = () => {
   rightHero.classList.add("rightHero");
   heroSec.append(rightHero);
   const heroImg = document.createElement("img");
-  heroImg.src = "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+  heroImg.src =
+    "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png";
   rightHero.append(heroImg);
 };
 

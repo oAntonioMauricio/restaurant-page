@@ -70,3 +70,8 @@ li {
   color: blue;
   cursor: pointer;
 }
+
+/* When Button is on active section */
+.activeButton {
+  color: blue;
+}

@@ -11,25 +11,30 @@ const homeButton = document.getElementById("homeLink");
 const menuButton = document.getElementById("menuLink");
 const contactButton = document.getElementById("contactLink");
 
-// delete the item after the header
+// get container
 const container = document.getElementById("content");
+
+// func to check and delete page if true and remove button active color
+const deletePage = () => {
+  if (container.children[1]) {
+    container.children[1].remove();
+  }
+
+  homeButton.classList.remove("activeButton");
+  menuButton.classList.remove("activeButton");
+  contactButton.classList.remove("activeButton");
+};
 
 // event listeners for the buttons
 homeButton.addEventListener("click", () => {
-  if (container.children[1]) {
-    container.children[1].remove();
-  }
+  deletePage();
   hero();
 });
 menuButton.addEventListener("click", () => {
-  if (container.children[1]) {
-    container.children[1].remove();
-  }
+  deletePage();
   menu();
 });
 contactButton.addEventListener("click", () => {
-  if (container.children[1]) {
-    container.children[1].remove();
-  }
+  deletePage();
   contact();
 });
