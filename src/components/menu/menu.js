@@ -20,8 +20,11 @@ const menu = () => {
   // menuDiv
   const menuDiv = createHtml("heroSec", "div", mainDiv);
 
+  // contDiv
+  const contDiv = createHtml("contDiv", "div", menuDiv);
+
   // h1 for menu
-  const h1Menu = createHtml("leftHeroH1", "h1", menuDiv);
+  const h1Menu = createHtml("leftHeroH1", "h1", contDiv);
   h1Menu.textContent = "Here's The Menu!";
 };
 
